@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ed12693-0252-41de-881f-ff63ed159889" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.babelrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.editorconfig" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.eslintignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.eslintrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.postcssrc.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/build.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/check-versions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/utils.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/vue-loader.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.base.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.dev.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.prod.conf.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/dev.env.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/prod.env.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/App.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/Appdownload.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/appBg.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner1.81b6070.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/comment01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/course.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/del.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/header_sprit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/login_bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/login_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/teacher01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/title_img.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/user.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways01.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways02.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways03.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/account.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/changeName.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/orderLists.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/payment.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/setPassword.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/settlement.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/shopCart.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/briefIntroduction.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/catalog.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/classDetail.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/download.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/evaluate.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/homepage.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/searchDetail.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/major.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/myClass.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/study.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/footer.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/main.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/.gitkeep" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/css/newsBase.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-02.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-03.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class02.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/comment01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail02.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail03.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail04.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/header_sprit.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/login_icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/order01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/teacher01.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/user.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways01.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways02.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways03.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/json/homepage.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-171">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="727" />
+    <option name="y" value="6" />
+    <option name="width" value="619" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngit" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngit" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
+              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngit" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
+              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learngit" type="462c0819:PsiDirectoryNode" />
+              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
+              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ed12693-0252-41de-881f-ff63ed159889" name="Default" comment="" />
+      <created>1542284006593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542284006593</updated>
+      <workItem from="1542284012886" duration="499000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="499000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2001488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-171">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
