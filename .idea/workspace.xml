@@ -2,86 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ed12693-0252-41de-881f-ff63ed159889" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.babelrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.editorconfig" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.eslintignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.eslintrc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/.postcssrc.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/build.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/check-versions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/utils.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/vue-loader.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.base.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.dev.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/build/webpack.prod.conf.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/dev.env.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/config/prod.env.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/App.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/Appdownload.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/appBg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner1.81b6070.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/banner1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/comment01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/course.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/del.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/header_sprit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/login_bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/login_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/teacher01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/title_img.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/user.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways01.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/assets/img/ways03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/account.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/changeName.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/orderLists.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/payment.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/setPassword.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/settlement.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Account/shopCart.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/briefIntroduction.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/catalog.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/classDetail.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/download.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/evaluate.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/homepage.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Homepage/searchDetail.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/major.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/myClass.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/Study/study.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/footer.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/.gitkeep" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/css/newsBase.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class-03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/class02.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/comment01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail02.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail03.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/detail04.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/header_sprit.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/login_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/order01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/teacher01.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/user.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways01.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways02.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/img/ways03.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/vue-assessment/static/json/homepage.json" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -93,29 +14,49 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="learngit" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-171">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="228">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+            <state relative-caret-position="224">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -124,16 +65,26 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue" />
+        <option value="$PROJECT_DIR$/demo.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/vue-assessment/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
     <option name="x" value="727" />
     <option name="y" value="6" />
     <option name="width" value="619" />
@@ -162,38 +113,12 @@
               <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
               <item name="learngit" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngit" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngit" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
-              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngit" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
-              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learngit" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learngit" type="462c0819:PsiDirectoryNode" />
-              <item name="vue-assessment" type="462c0819:PsiDirectoryNode" />
-              <item name="src-assessment" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="Homepage" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -201,6 +126,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -217,6 +145,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3ed12693-0252-41de-881f-ff63ed159889" name="Default" comment="" />
@@ -224,33 +155,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542284006593</updated>
-      <workItem from="1542284012886" duration="499000" />
+      <workItem from="1542284012886" duration="1081000" />
+      <workItem from="1542328374090" duration="2133000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499000" />
+    <option name="totallyTimeSpent" value="3214000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="727" y="6" width="619" height="698" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2001488" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46299484" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38938054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296131" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -278,6 +223,9 @@
       </map>
     </option>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -285,16 +233,40 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-171">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        <state relative-caret-position="513">
+          <caret line="27" column="11" lean-forward="false" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-assessment/src-assessment/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
           <folding />
         </state>
       </provider>
