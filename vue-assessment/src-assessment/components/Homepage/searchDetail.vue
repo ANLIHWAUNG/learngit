@@ -38,7 +38,7 @@
       <!-- 课程 -->
       <Row v-for="(item, index) in searchCourse" :key="index" class-name="content">
         <i-col span="24">
-          <router-link :to="{name: 'searchClassDetail', params: {'id': index, 'details': item}}">
+          <router-link :to="{name: 'searchClassDetail', params: {'id': index, 'course_id': item.id}}">
             <img :src="item.img_url"/>
             <div class="course">
               <p><span>精品课</span>{{item.class_title}}</p>
