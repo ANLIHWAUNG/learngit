@@ -10,6 +10,7 @@ import catalog from '../components/Homepage/catalog'
 import evaluate from '../components/Homepage/evaluate'
 import download from '../components/Homepage/download'
 import searchDetail from '../components/Homepage/searchDetail'
+import searchClassDetail from '../components/Homepage/searchClassDetail'
 
 import study from '../components/Study/study'
 import myClass from '../components/Study/myClass'
@@ -25,7 +26,7 @@ import changeName from '../components/Account/changeName'
 
 Vue.use(Router)
 
-export default new Router ({
+export default new Router({
   routes: [
     {
       path: '/login',
@@ -40,7 +41,7 @@ export default new Router ({
       component: classDetail,
       children: [
         {
-          path:'/classDetail/briefIntroduction',
+          path: '/classDetail/briefIntroduction',
           component: briefIntroduction
         },
         {
@@ -65,6 +66,11 @@ export default new Router ({
       path: '/searchDetail',
       name: 'searchDetail',
       component: searchDetail
+    },
+    {
+      path: '/searchClassDetail:id',
+      name: 'searchClassDetail',
+      component: searchClassDetail
     },
     {
       path: '/study',
