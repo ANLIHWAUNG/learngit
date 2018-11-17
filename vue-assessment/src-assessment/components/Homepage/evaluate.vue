@@ -3,7 +3,7 @@
     <div class="comments" v-for="(item, index) in comments" :key="index">
       <div class="comment-msg">
         <div>
-          <img :src="item.url"/>
+          <img :src="item.imgUrl"/>
           <span>{{item.name}}</span>
         </div>
         <span>{{item.time}}</span>
@@ -23,18 +23,14 @@
           comments: []
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              let homepage = res.data.data
-              this.comments = homepage[0].comments
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
+          setTimeout(() => {
+            this.comments = [{imgUrl: require('../../assets/img/comment01.jpg'), name: 'cfvgnggb', time: '14.21', content: '想办法再大点声。听不大清楚。'}]
+          }, 300)
         }
       }
     }
