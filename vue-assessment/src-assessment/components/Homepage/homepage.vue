@@ -96,21 +96,21 @@
           efficiency: {}
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
+          this.$http.get('/api/homepage')
+            .then(res => {
               // console.log(res.data.data)
               let homepage = res.data.data
               this.goodLeason = homepage[0].goodLeason
               this.special = homepage[0].special
               this.efficiency = homepage[0].efficiency[0]
               this.imgUrl = this.goodLeason[0].url
-            }).catch(function(error){
-            console.log("error init."+error)
+            }).catch(function (error) {
+            console.log('error init.' + error)
           })
         }
       }
