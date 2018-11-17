@@ -86,30 +86,37 @@
         }
       },
       mounted () {
+        this.getOrder()
         this.get()
         let a = document.querySelectorAll('nav a')
         let content = document.querySelectorAll('.content')
         let l = a.length
-        for(let i = 0; i < l; i++){
+        for (let i = 0; i < l; i++) {
           a[i].onclick = function () {
              for (let j = 0; j < l; j++) {
-               a[j].setAttribute('class','')
-               content[j].setAttribute('style','display:none')
+               a[j].setAttribute('class', '')
+               content[j].setAttribute('style', 'display:none')
              }
-             a[i].setAttribute('class','active')
-             content[i].setAttribute('style','display:block')
+             a[i].setAttribute('class', 'active')
+             content[i].setAttribute('style', 'display:block')
           }
         }
       },
       methods: {
-        get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
+        getOrder: function () {
+          this.$http.get('/api/homepage')
+            .then(res => {
               let homepage = res.data.data
               this.content = homepage[0].goodLeason[0]
-            }).catch(function(error){
-            console.log("error init."+error)
+            }).catch(function (error) {
+            console.log('error init.' + error)
           })
+        },
+        get () {
+          this.$http.post('http://193.112.184.39/index.php/info/getOrder')
+            .then(function (res) {
+              console.log(res)
+            })
         }
       }
     }
