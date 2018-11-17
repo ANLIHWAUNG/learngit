@@ -1,8 +1,8 @@
 <template>
   <section>
     <!-- 搜索框 -->
-    <i-input v-model="value1" placeholder="搜索课程" @on-enter="searchLesson">
-      <Button slot="prepend" icon="ios-search" @click="searchLesson"></Button>
+    <i-input v-model="keyword " placeholder="搜索课程" @on-enter="searchLeasson">
+      <Button slot="prepend" icon="ios-search" @click="searchLeasson"></Button>
       <span slot="append" @click="cancel">取消</span>
     </i-input>
     <!-- tab -->
@@ -38,13 +38,13 @@
       <!-- 课程 -->
       <Row v-for="(item, index) in searchCourse" :key="index" class-name="content">
         <i-col span="24">
-          <a>
-            <img :src="item.url"/>
+          <router-link :to="{name: 'searchClassDetail', params: {'id': index, 'details': item}}">
+            <img :src="item.img_url"/>
             <div class="course">
-              <p><span>{{item.category}}</span>{{item.name}}</p>
-              <p>{{item.num}}人学过</p>
+              <p><span>精品课</span>{{item.class_title}}</p>
+              <p>1880人学过</p>
             </div>
-          </a>
+          </router-link>
         </i-col >
       </Row>
     </div>
@@ -56,45 +56,64 @@
       name: 'search-detail',
       data: function () {
         return {
-          value1: '',
-          searchCourse: ''
+          keyword: '',
+          searchCourse: '',
+          totalCourse: ''
         }
       },
       mounted () {
-        this.get()
-        let a = document.querySelectorAll('nav a')
+        let vm = this
+        vm.get()
+        let a = document.querySelectorAll('.title a')
         let l = a.length
-        for(let i = 0; i < l; i++){
+        for (let i = 0; i < l; i++) {
           a[i].onclick = function () {
             for (let j = 0; j < l; j++) {
-              a[j].setAttribute('class','')
+              a[j].setAttribute('class', '')
             }
-            a[i].setAttribute('class','active')
+            a[i].setAttribute('class', 'active')
+            vm.changeLesson(i)
           }
         }
       },
       methods: {
-        get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              // console.log(res.data.data);
-              let homepage = res.data.data
-              this.searchCourse = homepage[0].searchCourse
-              // console.log(this.searchCourse)
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
-        },
-        searchLesson () {
-          if (this.value1 !== ''){
-            this.searchCourse = this.searchCourse.filter((item, index, array) => {
-              return item.name === this.value1
+        get () {
+          let vm = this
+          this.$http.post('http://193.112.184.39/index.php/info/searchCourse')
+            .then(function (res) {
+              let resData = res.data
+              console.log(resData.data.data)
+              vm.totalCourse = resData.data.data
+              vm.searchCourse = vm.totalCourse
             })
+        },
+        changeLesson (index) {
+          let arr = []
+          let course = this.totalCourse
+          if (index === 1) {
+            for (let i in course) {
+              if (course[i].is_selling) {
+                arr.push(course[i])
+              }
+            }
+            this.searchCourse = arr
+          } else {
+            this.searchCourse = this.totalCourse
           }
         },
+        searchLeasson () {
+          let arr = []
+          let course = this.totalCourse
+          for (let i in course) {
+            if (course[i].class_title === this.keyword) {
+              arr.push(course[i])
+            }
+          }
+          this.searchCourse = arr
+        },
         cancel () {
-          this.get()
-          this.value1 = ''
+          this.keyword = ''
+          this.searchCourse = this.totalCourse
         }
       }
     }
