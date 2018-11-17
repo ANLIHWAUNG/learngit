@@ -4,13 +4,13 @@
       <img src="../assets/img/login_icon.png"/>
       <div class="login-content">
         <Form ref="formContent" :model="formContent" :rules="ruleContent">
-          <FormItem prop="user">
-            <i-input type="text" v-model="formContent.user" placeholder="请输入账号">
+          <FormItem prop="username">
+            <i-input type="text" v-model="formContent.username" placeholder="请输入账号">
               <Icon type="ios-person-outline" slot="prepend"></Icon>
             </i-input>
           </FormItem>
-          <FormItem prop="password">
-            <i-input type="password" v-model="formContent.password" placeholder="请输入密码">
+          <FormItem prop=" userpass">
+            <i-input type="password" v-model="formContent. userpass" placeholder="请输入密码">
               <Icon type="ios-lock-outline" slot="prepend"></Icon>
             </i-input>
           </FormItem>
@@ -28,30 +28,42 @@
     data () {
       return {
         formContent: {
-          user: '',
-          password: ''
+          username: '',
+          userpass: ''
         },
         ruleContent: {
-          user: [
+          username: [
             { required: true, message: '账号不能为空', trigger: 'blur' }
           ],
-          password: [
+          userpass: [
             { required: true, message: '密码不能为空', trigger: 'blur' }
           ]
         }
       }
     },
     methods: {
-      handleSubmit(name) {
-        this.$refs[name].validate((valid) => {
-          if (valid) {
-            this.$Message.success('登录成功!');
-            setTimeout(() => {
-              this.$router.push('/homepage');
-            },300)
-          } else {
-            this.$Message.error('登录失败!');
-          }
+      handleSubmit (name) {
+        let vm = this
+        let dataUrlParams = new URLSearchParams(this.formContent);
+        this.$http({
+          method: 'POST',
+          url: 'http://193.112.184.39/index.php/index/login',
+          headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+           },
+          data: dataUrlParams
+        }).then((res) => {
+          if (res.status === 200) {
+            let resData = res.data
+            if (resData.code) {
+              this.$Message.success(resData.msg)
+              setTimeout(() => {
+                this.$router.push('/homepage')
+              })
+            } else {
+              this.$Message.error(resData.msg)
+            }
+        }
         })
       }
     }
