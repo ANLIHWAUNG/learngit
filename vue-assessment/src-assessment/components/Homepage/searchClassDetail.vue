@@ -3,7 +3,7 @@
     <!-- 书名 -->
     <div class="book-box">
       <div class="book-name">
-        <div><img :src="details.img_url"/></div>
+        <div><img :src="pic"/></div>
         <p class="book-title">{{details.class_title}}</p>
         <p><span class="gray">{{details.is_only ? '不独家': '独家'}}</span><span class="gray">{{details.is_only ? '不独家': '独家'}}</span></p>
         <p class="price"><span>￥{{details.price}}</span><span>特价仅剩7小时38分钟</span></p>
@@ -13,9 +13,9 @@
     <div class="teacher-part">
       <div class="teacher">
         <div class="teacher-msg">
-          <img src="../../assets/img/teacher01.jpg"/>
+          <img :src="details.img_url"/>
           <div>
-            <p>维小维生素</p>
+            <p>{{details.teacher_name}}</p>
             <p>2884位学员</p>
           </div>
         </div>
@@ -26,7 +26,7 @@
     <div class="course-part">
       <div class="course">
         <p class="title">课程介绍</p>
-        <span class="gray">{{details.class_info }}</span>
+        <span class="gray">{{details.class_info}}</span>
       </div>
     </div>
   </section>
@@ -37,11 +37,24 @@
       name: 'search-class-detail',
       data: function () {
         return {
-          details: ''
+          course_id: '',
+          details: '',
+          pic: ''
         }
       },
       mounted () {
-        this.details = this.$route.params.details
+        this.course_id = this.$route.params.course_id
+        this.pic = this.$route.params.pic
+        this.get()
+      },
+      methods: {
+        get () {
+          this.$http.post('http://193.112.184.39/index.php/Index/getClassDetails', 'course_id=' + this.course_id)
+            .then((res) => {
+            // console.log(res.data.data)
+            this.details = res.data.data
+            })
+        }
       }
     }
 </script>
@@ -64,6 +77,9 @@
     display: flex;
     flex-direction: column;
     padding: 0.367rem;
+  }
+  .book-name img{
+    width: 100%;
   }
   .book-title,
   .price span:first-child{
