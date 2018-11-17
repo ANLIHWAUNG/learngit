@@ -43,8 +43,7 @@
     },
     methods: {
       handleSubmit (name) {
-        let vm = this
-        let dataUrlParams = new URLSearchParams(this.formContent);
+        let dataUrlParams = new URLSearchParams(this.formContent)
         this.$http({
           method: 'POST',
           url: 'http://193.112.184.39/index.php/index/login',
