@@ -65,6 +65,7 @@
 
 <script>
   import diyfooter from '../footer'
+  import bus from '../../assets/eventBus'
 
     export default {
       name: 'account',
@@ -79,16 +80,21 @@
             account: 'ykt1470300584200'
           }
       },
+      mounted () {
+        bus.$on('sendmsg', function (msg) {
+          console.log('接收信息', msg)
+        })
+      },
       methods: {
         ok () {
           setTimeout(() => {
-            this.modal1 = false;
+            this.modal1 = false
             this.$Message.info('退出成功')
-            window.location.href="index.html"
+            window.location.href = 'index.html'
           }, 2000)
         },
         cancel () {
-          this.modal1 = false;
+          this.modal1 = false
           this.$Message.info('已取消')
         }
       }

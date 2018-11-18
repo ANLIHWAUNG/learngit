@@ -56,6 +56,8 @@
             let resData = res.data
             if (resData.code) {
               this.$Message.success(resData.msg)
+              console.log('用户信息', resData.data)
+              this.$emit('sendmsg', resData.data)
               setTimeout(() => {
                 this.$router.push('/homepage')
               })

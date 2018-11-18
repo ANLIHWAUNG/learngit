@@ -6,6 +6,16 @@
 
 <script>
   export default {
+    data: function () {
+      return {
+        userData: ''
+      }
+    },
+    method: {
+      sendmsg (msg) {
+        this.userData = msg
+      }
+    }
   }
 </script>
 
