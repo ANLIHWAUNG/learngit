@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive>
+      <router-view @userSingIn="userSingIn" :userData="userData"/>
+    </keep-alive>
   </div>
 </template>
 
@@ -11,9 +13,10 @@
         userData: ''
       }
     },
-    method: {
-      sendmsg (msg) {
+    methods: {
+      userSingIn (msg) {
         this.userData = msg
+        console.log(msg)
       }
     }
   }

@@ -46,7 +46,7 @@
         let dataUrlParams = new URLSearchParams(this.formContent)
         this.$http({
           method: 'POST',
-          url: 'http://193.112.184.39/index.php/index/login',
+          url: 'http://134.175.237.162/index.php/index/login',
           headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
            },
@@ -57,7 +57,7 @@
             if (resData.code) {
               this.$Message.success(resData.msg)
               console.log('用户信息', resData.data)
-              this.$emit('sendmsg', resData.data)
+              this.$emit('userSingIn', resData.data)
               setTimeout(() => {
                 this.$router.push('/homepage')
               })
@@ -65,6 +65,8 @@
               this.$Message.error(resData.msg)
             }
         }
+        }).catch(function (error) {
+          console.log(error)
         })
       }
     }

@@ -1,11 +1,11 @@
 <template>
   <section>
     <!-- 账号 -->
-    <router-link :to="{name: 'changeName', params: {'id': 1, 'account': account}}" class="account-part">
+    <router-link :to="{name: 'changeName', params: {'id': 1, 'userData': userData}}" class="account-part">
       <div class="account">
-        <img src="../../assets/img/user.jpg"/>
+        <img :src="userData.img_url"/>
         <div>
-          <p>{{account}}</p>
+          <p>{{userData.username}}</p>
           <p class="gray">正在使用QQ账户登录</p>
         </div>
       </div>
@@ -69,6 +69,7 @@
 
     export default {
       name: 'account',
+      props: ['userData'],
       components: {
         diyfooter
       },
@@ -76,8 +77,7 @@
           return {
             badgeOffset: [10, 35],
             modal1: false,
-            loading: true,
-            account: 'ykt1470300584200'
+            loading: true
           }
       },
       mounted () {
