@@ -54,7 +54,6 @@
           this.pic = this.$route.params.pic
           this.$http.post('http://134.175.237.162/index.php/Index/getClassDetails', 'course_id=' + this.course_id)
             .then((res) => {
-              console.log(res.data.data)
               this.details = res.data.data
             }).catch(function (error) {
               console.log(error)

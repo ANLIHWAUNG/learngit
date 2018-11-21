@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <keep-alive>
-      <router-view @userSingIn="userSingIn" :userData="userData"/>
-    </keep-alive>
+    <router-view @userSingIn="userSingIn" :userData="userData"/>
   </div>
 </template>
 
