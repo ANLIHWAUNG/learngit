@@ -4,20 +4,20 @@
     <!-- 订单 -->
     <div class="order" v-for="(item, index) in order" :key="index">
       <div style="border-bottom: 1px solid #e9e9e9;padding:6px;margin-bottom:6px;background:#f7f9fc;">
-        <Checkbox  :value="checkAll">{{item.title}}</Checkbox>
+        <Checkbox  :value="checkAll">{{item.class_title}}</Checkbox>
       </div>
       <CheckboxGroup v-model="checkAllGroup" @on-change="checkAllGroupChange">
         <Checkbox label="order">
           <div class="course-content">
             <div class="course-main">
-              <img :src="item.url"/>
+              <img :src="item.img_url"/>
               <div>
-                <a>{{item.name}}</a>
+                <a>{{item.class_info}}</a>
                 <p class="time">{{item.time}}</p>
                 <p class="price">￥{{item.price}}</p>
               </div>
             </div>
-            <span class="del">删除</span>
+            <span class="del" @click="delCart">删除</span>
           </div>
         </Checkbox>
         <p class="sum">该机构小计：<span>￥{{sum}}</span></p>
@@ -60,66 +60,75 @@
 </template>
 
 <script>
-    export default {
-      name: 'shop-cart',
-      props: ['userData'],
-      data () {
-        return {
-          checkAll: false,
-          checkAllGroup: [],
-          butDisabled: true,
-          price: '249.00',
-          sum: '0.00',
-          show: true,
-          order: []
+  export default {
+    name: 'shop-cart',
+    props: ['userData'],
+    data () {
+      return {
+        checkAll: false,
+        checkAllGroup: [],
+        butDisabled: true,
+        price: '',
+        sum: '0.00',
+        show: true,
+        order: '',
+        shopid: '',
+        userid: ''
+      }
+    },
+    mounted () {
+      this.getCart()
+    },
+    methods: {
+      getCart () {
+        let vm = this
+        this.$http.post('http://134.175.237.162/index.php/Shop_cart/getShopList', 'user_id=' + this.userData.id)
+          .then(function (res) {
+            // console.log(res)
+            vm.order = res.data.data
+            vm.shopid = vm.order[0].course_id
+            vm.userid = vm.order[0].user_id
+            vm.price = vm.order[0].price
+            // console.log(vm.order[0])
+          }).catch(function (error) {
+          console.log(error)
+        })
+      },
+      handleCheckAll () {
+        this.checkAll = !this.checkAll
+        if (this.checkAll) {
+          this.checkAllGroup = ['order']
+          this.sum = this.price
+          this.butDisabled = false
+          // console.log(this.butDisabled)
+        } else {
+          this.checkAllGroup = []
+          this.sum = 0.00
+          this.butDisabled = true
         }
       },
-      mounted () {
-        this.get()
-        this.getCart()
-      },
-      methods: {
-        get: function () {
-          this.$http.get('/api/study')
-            .then(res => {
-              let study = res.data.data
-              this.order = study[0].order
-            }).catch(function (error) {
-            console.log('error init.' + error)
-          })
-        },
-        getCart () {
-          this.$http.post('http://193.112.184.39/index.php/Shop_cart/getShopList', 'user_id=' + this.userData.id)
-            .then(function (res) {
-              console.log(res)
-            })
-        },
-        handleCheckAll () {
-          this.checkAll = !this.checkAll
-          if (this.checkAll) {
-            this.checkAllGroup = ['order']
-            this.sum = this.price
-            this.butDisabled = false
-            // console.log(this.butDisabled)
-          } else {
-            this.checkAllGroup = []
-            this.sum = 0.00
-            this.butDisabled = true
-          }
-        },
-        checkAllGroupChange (data) {
-          if (data.length === 1) {
-            this.checkAll = true
-            this.sum = this.price
-            this.butDisabled = false
-          } else {
-            this.checkAll = false
-            this.sum = 0.00
-            this.butDisabled = true
-          }
+      checkAllGroupChange (data) {
+        if (data.length === 1) {
+          this.checkAll = true
+          this.sum = this.price
+          this.butDisabled = false
+        } else {
+          this.checkAll = false
+          this.sum = 0.00
+          this.butDisabled = true
         }
+      },
+      delCart () {
+        this.checkAll = false
+        this.$http.post('http://134.175.237.162/index.php/info/delShop', 'shopid=' + this.shopid + '&usrid=' + this.userid)
+          .then(res => {
+            this.$Message.error(res.data.msg)
+          }).catch(function (error) {
+          console.log(error)
+        })
       }
     }
+  }
 </script>
 
 <style scoped>
@@ -141,6 +150,7 @@
     background: gold;
   }
   .order{
+    width: 100%;
     background-color: #fff;
   }
   .ivu-checkbox-group{
@@ -163,11 +173,18 @@
     align-items: center;
   }
   .course-main img{
+    width: 97px;
+    height: 54px;
     margin-right: 1rem;
   }
   .course-main a{
+    display: inline-block;
     color: #3c4a55;
     font-size: 1.07rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
   }
   .course-main .time,
   .del{

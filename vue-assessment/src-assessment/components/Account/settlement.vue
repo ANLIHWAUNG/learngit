@@ -2,17 +2,17 @@
   <section>
     <!-- 账号 -->
     <div class="account">
-      <p class="user"><span>购买账号: 雨泉十代</span><span>更换账号<Icon type="ios-arrow-forward" /></span></p>
+      <p class="user"><span>购买账号: {{userData.username}}</span><span>更换账号<Icon type="ios-arrow-forward" /></span></p>
       <p>手机号 : 未绑定</p>
       <div class="tip">购买后不支持退款、转让，请确认开课时间或有效期后再提交订单</div>
     </div>
     <!-- 订单 -->
     <div class="order" v-for="(item, index) in order" :key="index">
-      <p class="order-title">{{item.title}}</p>
+      <p class="order-title">{{item.class_title}}</p>
       <div class="order-main">
-        <img :src="item.url"/>
+        <img :src="item.img_url"/>
         <div class="order-content">
-          <a>{{item.name}}</a>
+          <a>{{item.class_info}}</a>
           <p class="time">{{item.time}}</p>
           <p class="price">￥{{item.price}}</p>
         </div>
@@ -37,28 +37,29 @@
 </template>
 
 <script>
-    export default {
-      name: 'settlement',
-      data: function () {
-        return {
-          sum: '',
-          order: [],
-          price: ''
-        }
-      },
-      mounted () {
-        this.get()
-      },
-      methods: {
-        get: function () {
-          setTimeout(() => {
-            this.sum = this.$route.params.sum
-            this.order = this.$route.params.order
-            this.price = this.order[0].price
-          }, 300);
-        }
+  export default {
+    name: 'settlement',
+    props: ['userData'],
+    data: function () {
+      return {
+        sum: '',
+        order: [],
+        price: ''
+      }
+    },
+    mounted () {
+      this.get()
+    },
+    methods: {
+      get: function () {
+        setTimeout(() => {
+          this.sum = this.$route.params.sum
+          this.order = this.$route.params.order
+          this.price = this.order[0].price
+        }, 300)
       }
     }
+  }
 </script>
 
 <style scoped>
@@ -100,13 +101,22 @@
     padding-top: 1.2rem;
     display: flex;
   }
+  .order-main img{
+    width: 120px;
+    height: 75px;
+  }
   .order-content{
     margin-left: .5rem;
   }
   .order-content a{
+    display: inline-block;
     color: #3c4a55;
     height: 2.35rem;
     font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 200px;
   }
   /* 小计 */
   .money{
@@ -131,6 +141,7 @@
   .sum-money{
     margin-top: .8rem;
     background-color: #fff;
+    padding-bottom: 5rem;
   }
   .sum-money p{
     line-height: 3.1rem;

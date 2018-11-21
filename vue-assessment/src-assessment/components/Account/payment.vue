@@ -15,7 +15,7 @@
     </RadioGroup>
     <!-- 支付 -->
     <div class="payment">
-      <p class="moneytxt">实付金额：<span class="money">¥ 168.00</span></p>
+      <p class="moneytxt">实付金额：<span class="money">¥ 60.00</span></p>
       <Button long :loading="!ways" @click="success(true)">立即支付</Button>
       <p class="protocol">
         <input type="checkbox" checked>我已同意阅读并同意<span>《云课堂用户付费协议》</span>
@@ -35,12 +35,12 @@
       methods: {
         success (nodesc) {
           this.$Notice.success({
-            title: this.ways+'支付成功',
+            title: this.ways + '支付成功',
             desc: nodesc ? '' : 'Here is the notification description. Here is the notification description. '
           })
-          setTimeout(()=>{
+          setTimeout(() => {
             this.$router.push('/homepage')
-          },300)
+          }, 500)
         }
       }
     }
