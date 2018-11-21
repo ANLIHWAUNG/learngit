@@ -80,6 +80,7 @@
 <script>
     export default {
       name: 'order-lists',
+      props: ['userData'],
       data: function () {
         return {
           content: {}
@@ -113,8 +114,13 @@
           })
         },
         get () {
-          this.$http.post('http://193.112.184.39/index.php/info/getOrder')
-            .then(function (res) {
+          this.$http({
+            method: 'POST',
+            url: 'http://134.175.237.162/index.php/info/getOrder',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            }
+          }).then(function (res) {
               console.log(res)
             }).catch(function (error) {
               console.log(error)
