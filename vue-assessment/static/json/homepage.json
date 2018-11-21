@@ -7,13 +7,5 @@
         {"url": "../../../static/img/class-01.jpg", "className": "能帮你赚到钱的50节商业思维提升课", "price": ""}
       ]
     }
-  ],
-  "study": [
-    {
-      "course": [
-        {"url": "../../../static/img/class02.jpg", "title": "学什么数学", "learn": "开始学习"},
-        {"url": "../../../static/img/class02.jpg", "title": "学什么数学", "learn": "开始学习"}
-      ]
-    }
   ]
 }
