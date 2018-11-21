@@ -8,11 +8,13 @@
   export default {
     data: function () {
       return {
-        userData: ''
+        userData: '',
+        testData: ''
       }
     },
     methods: {
       userSingIn (msg) {
+        this.testData = sessionStorage.userData
         this.userData = msg
       }
     }

@@ -83,7 +83,13 @@
       props: ['userData'],
       data: function () {
         return {
-          content: {}
+          content: {},
+          sendMsg: {
+            userid: 1,
+            pagenow: 1,
+            pagesize: 1,
+            // status: 0
+          }
         }
       },
       mounted () {
@@ -114,12 +120,14 @@
           })
         },
         get () {
+          let sendData = new URLSearchParams(this.sendMsg)
           this.$http({
             method: 'POST',
             url: 'http://134.175.237.162/index.php/info/getOrder',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded'
-            }
+            },
+            data: sendData
           }).then(function (res) {
               console.log(res)
             }).catch(function (error) {

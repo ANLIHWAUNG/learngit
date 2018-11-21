@@ -58,6 +58,7 @@
               this.$Message.success(resData.msg)
               // console.log('用户信息', resData.data)
               this.$emit('userSingIn', resData.data)
+              sessionStorage.setItem('userData', resData.data)
               setTimeout(() => {
                 this.$router.push('/homepage')
               })
