@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view @userSingIn="userSingIn" :userData="userData"/>
+    <router-view/>
   </div>
 </template>
 
@@ -8,14 +8,6 @@
   export default {
     data: function () {
       return {
-        userData: '',
-        testData: ''
-      }
-    },
-    methods: {
-      userSingIn (msg) {
-        this.testData = sessionStorage.userData
-        this.userData = msg
       }
     }
   }

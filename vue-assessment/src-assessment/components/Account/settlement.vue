@@ -39,15 +39,16 @@
 <script>
   export default {
     name: 'settlement',
-    props: ['userData'],
     data: function () {
       return {
         sum: '',
         order: [],
-        price: ''
+        price: '',
+        userData: ''
       }
     },
     mounted () {
+      this.userData = JSON.parse(sessionStorage.getItem('userData'))
       this.get()
     },
     methods: {

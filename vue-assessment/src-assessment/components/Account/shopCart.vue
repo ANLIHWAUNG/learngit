@@ -62,7 +62,6 @@
 <script>
   export default {
     name: 'shop-cart',
-    props: ['userData'],
     data () {
       return {
         checkAll: false,
@@ -73,10 +72,12 @@
         show: true,
         order: '',
         shopid: '',
-        userid: ''
+        userid: '',
+        userData: ''
       }
     },
     mounted () {
+      this.userData = JSON.parse(sessionStorage.getItem('userData'))
       this.getCart()
     },
     methods: {

@@ -80,19 +80,23 @@
 <script>
     export default {
       name: 'order-lists',
-      props: ['userData'],
       data: function () {
         return {
-          content: {},
+          userData: '',
+          content: '',
           sendMsg: {
+            courseid: '7,8,9',
+            userid: 1
+          },
+          getLists: {
             userid: 1,
             pagenow: 1,
-            pagesize: 1,
-            // status: 0
+            pagesize: 1
           }
         }
       },
       mounted () {
+        this.userData = JSON.parse(sessionStorage.getItem('userData'))
         this.getOrder()
         this.get()
         let a = document.querySelectorAll('nav a')
@@ -111,6 +115,9 @@
       },
       methods: {
         getOrder: function () {
+          setTimeout(() => {
+            this.content = {url: require('../../assets/img/class-01.jpg'), className: '能帮你赚到钱的50节商业思维提升课', price: '￥69'}
+          }, 500)
           this.$http.get('/api/homepage')
             .then(res => {
               let homepage = res.data.data
@@ -123,14 +130,18 @@
           let sendData = new URLSearchParams(this.sendMsg)
           this.$http({
             method: 'POST',
-            url: 'http://134.175.237.162/index.php/info/getOrder',
+            url: 'http://134.175.237.162/index.php/info/addOrder',
             headers: {
               'Content-Type': 'application/x-www-form-urlencoded'
             },
             data: sendData
-          }).then(function (res) {
-              console.log(res)
-            }).catch(function (error) {
+          }).then(res => {
+            console.log(res)
+            this.$http.post('http://134.175.237.162/index.php/info/getOrder', new URLSearchParams(this.getLists))
+              .then(function (res) {
+                console.log(res)
+              })
+          }).catch(function (error) {
               console.log(error)
           })
         }

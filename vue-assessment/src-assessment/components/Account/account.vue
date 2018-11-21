@@ -68,7 +68,6 @@
 
     export default {
       name: 'account',
-      props: ['userData'],
       components: {
         diyfooter
       },
@@ -76,8 +75,12 @@
           return {
             badgeOffset: [10, 35],
             modal1: false,
-            loading: true
+            loading: true,
+            userData: ''
           }
+      },
+      mounted () {
+        this.userData = JSON.parse(sessionStorage.getItem('userData'))
       },
       methods: {
         ok () {
