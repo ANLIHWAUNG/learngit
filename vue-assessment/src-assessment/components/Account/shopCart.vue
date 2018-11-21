@@ -62,6 +62,7 @@
 <script>
     export default {
       name: 'shop-cart',
+      props: ['userData'],
       data () {
         return {
           checkAll: false,
@@ -73,23 +74,30 @@
           order: []
         }
       },
-      mounted(){
+      mounted () {
         this.get()
+        this.getCart()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/study")
-            .then(res=>{
+          this.$http.get('/api/study')
+            .then(res => {
               let study = res.data.data
               this.order = study[0].order
-            }).catch(function(error){
-            console.log("error init."+error)
+            }).catch(function (error) {
+            console.log('error init.' + error)
           })
         },
+        getCart () {
+          this.$http.post('http://193.112.184.39/index.php/Shop_cart/getShopList', 'user_id=' + this.userData.id)
+            .then(function (res) {
+              console.log(res)
+            })
+        },
         handleCheckAll () {
-          this.checkAll = !this.checkAll;
+          this.checkAll = !this.checkAll
           if (this.checkAll) {
-            this.checkAllGroup = ['order'];
+            this.checkAllGroup = ['order']
             this.sum = this.price
             this.butDisabled = false
             // console.log(this.butDisabled)

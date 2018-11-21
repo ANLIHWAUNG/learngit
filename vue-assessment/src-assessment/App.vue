@@ -16,7 +16,6 @@
     methods: {
       userSingIn (msg) {
         this.userData = msg
-        console.log(msg)
       }
     }
   }

@@ -33,7 +33,7 @@
       </div>
       <div class="detail">
         <Icon type="ios-lock" />
-        <router-link :to="{name: 'setPassword', params:{'id': 1, 'account': account}}">
+        <router-link :to="{name: 'setPassword', params:{'id': 1, 'userData': userData}}">
           <span>密码设置</span>
           <Icon type="ios-arrow-forward" />
         </router-link>
@@ -65,7 +65,6 @@
 
 <script>
   import diyfooter from '../footer'
-  import bus from '../../assets/eventBus'
 
     export default {
       name: 'account',
@@ -79,11 +78,6 @@
             modal1: false,
             loading: true
           }
-      },
-      mounted () {
-        bus.$on('sendmsg', function (msg) {
-          console.log('接收信息', msg)
-        })
       },
       methods: {
         ok () {

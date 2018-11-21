@@ -116,7 +116,9 @@
           this.$http.post('http://193.112.184.39/index.php/info/getOrder')
             .then(function (res) {
               console.log(res)
-            })
+            }).catch(function (error) {
+              console.log(error)
+          })
         }
       }
     }

@@ -79,7 +79,7 @@
       methods: {
         get () {
           let vm = this
-          this.$http.post('http://193.112.184.39/index.php/info/searchCourse')
+          this.$http.post('http://134.175.237.162/index.php/info/searchCourse')
             .then(function (res) {
               let resData = res.data
               // console.log(resData.data.data)

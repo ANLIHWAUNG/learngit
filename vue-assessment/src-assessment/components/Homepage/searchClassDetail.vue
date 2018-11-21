@@ -42,18 +42,23 @@
           pic: ''
         }
       },
+      watch: {
+        '$route': 'getClassDetails'
+      },
       mounted () {
-        this.course_id = this.$route.params.course_id
-        this.pic = this.$route.params.pic
-        this.get()
+        this.getClassDetails()
       },
       methods: {
-        get () {
-          this.$http.post('http://193.112.184.39/index.php/Index/getClassDetails', 'course_id=' + this.course_id)
+        getClassDetails () {
+          this.course_id = this.$route.params.course_id
+          this.pic = this.$route.params.pic
+          this.$http.post('http://134.175.237.162/index.php/Index/getClassDetails', 'course_id=' + this.course_id)
             .then((res) => {
-            // console.log(res.data.data)
-            this.details = res.data.data
-            })
+              console.log(res.data.data)
+              this.details = res.data.data
+            }).catch(function (error) {
+              console.log(error)
+          })
         }
       }
     }
