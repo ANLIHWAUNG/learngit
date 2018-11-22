@@ -15,7 +15,7 @@
     </RadioGroup>
     <!-- 支付 -->
     <div class="payment">
-      <p class="moneytxt">实付金额：<span class="money">¥ 60.00</span></p>
+      <p class="moneytxt">实付金额：<span class="money">￥{{this.$route.params.price}}</span></p>
       <Button long :loading="!ways" @click="success(true)">立即支付</Button>
       <p class="protocol">
         <input type="checkbox" checked>我已同意阅读并同意<span>《云课堂用户付费协议》</span>
@@ -40,7 +40,7 @@
           })
           setTimeout(() => {
             this.$router.push('/homepage')
-          }, 500)
+          }, 1000)
         }
       }
     }

@@ -1,13 +1,13 @@
 <template>
   <section>
-    <p class="title">共1门课程</p>
+    <p class="title">共{{this.order.length}}门课程</p>
     <!-- 订单 -->
     <div class="order" v-for="(item, index) in order" :key="index">
       <div style="border-bottom: 1px solid #e9e9e9;padding:6px;margin-bottom:6px;background:#f7f9fc;">
         <Checkbox  :value="checkAll">{{item.class_title}}</Checkbox>
       </div>
       <CheckboxGroup v-model="checkAllGroup" @on-change="checkAllGroupChange">
-        <Checkbox label="order">
+        <Checkbox :label="index">
           <div class="course-content">
             <div class="course-main">
               <img :src="item.img_url"/>
@@ -20,7 +20,7 @@
             <span class="del" @click="delCart">删除</span>
           </div>
         </Checkbox>
-        <p class="sum">该机构小计：<span>￥{{sum}}</span></p>
+        <p class="sum">该机构小计：<span>￥{{item.price}}</span></p>
       </CheckboxGroup>
     </div>
     <!-- 菜单栏 -->
@@ -52,7 +52,7 @@
             <p>合计：<span>￥{{sum}}</span></p>
             <p>若有优惠，将在订单结算页面减扣</p>
           </div>
-          <Button :disabled="butDisabled" type="primary" :to="{name: 'settlement', params: {'id': 1, 'order': order, 'sum': sum}}">去结算</Button>
+          <Button :disabled="butDisabled" type="primary" :to="{name: 'settlement', params: {'id': 1, 'order':  sendOrder, 'sum': sum}}">去结算</Button>
         </div>
       </Checkbox>
     </div>
@@ -68,12 +68,13 @@
         checkAllGroup: [],
         butDisabled: true,
         price: '',
-        sum: '0.00',
+        sum: 0.00,
         show: true,
         order: '',
         shopid: '',
         userid: '',
-        userData: ''
+        userData: '',
+        sendOrder: []
       }
     },
     mounted () {
@@ -99,7 +100,9 @@
         this.checkAll = !this.checkAll
         if (this.checkAll) {
           this.checkAllGroup = ['order']
-          this.sum = this.price
+          for (let i = 0; i < this.order.length; i++) {
+            this.sum += +this.order[i].price
+          }
           this.butDisabled = false
           // console.log(this.butDisabled)
         } else {
@@ -109,14 +112,22 @@
         }
       },
       checkAllGroupChange (data) {
-        if (data.length === 1) {
+        if (data.length === this.order.length) {
           this.checkAll = true
-          this.sum = this.price
+          for (let i = 0; i < this.order.length; i++) {
+            this.sum += +this.order[i].price
+          }
           this.butDisabled = false
+        } else if (data.length > 0 && data.length < this.order.length) {
+          this.checkAll = false
+          this.sum += +this.order[data[data.length - 1]].price
+          this.butDisabled = false
+          this.sendOrder.push(this.order[data[data.length - 1]])
         } else {
           this.checkAll = false
           this.sum = 0.00
           this.butDisabled = true
+          this.sendOrder = []
         }
       },
       delCart () {
@@ -185,7 +196,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 150px;
   }
   .course-main .time,
   .del{
@@ -229,11 +240,12 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
   }
   .navigation-item .left{
     top: 0;
     left: 0;
+    position:  absolute;
   }
   .navigation-item .wangyi{
     margin-left: 2.5rem;
@@ -272,6 +284,7 @@
     padding-left: .8rem;
     justify-content: space-between;
     width: 100%;
+    z-index: 3;
   }
   .settlement-content{
     display: flex;

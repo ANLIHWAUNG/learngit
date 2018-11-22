@@ -20,8 +20,8 @@
     </div>
     <!-- 小计 -->
     <div class="money">
-      <p>小计：￥{{price}}</p>
-      <p>小计：￥{{price}}</p>
+      <p>小计：￥{{sum}}</p>
+      <p>小计：￥{{sum}}</p>
     </div>
     <!-- 总计 -->
     <div class="sum-money">
@@ -31,7 +31,7 @@
     <!-- 提交订单 -->
     <div class="sub-order">
       <p class="order-money">实付金额：<span>￥{{sum}}</span></p>
-      <Button to="/payment">提交订单</Button>
+      <Button :to="{name:'payment', params: {'price': this.price}}">提交订单</Button>
     </div>
   </section>
 </template>
