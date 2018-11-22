@@ -27,8 +27,8 @@
         get: function () {
           setTimeout(() => {
             this.course = [
-              {url: require('../../../static/img/class02.jpg'), title: '学什么数学', learn: '开始学习'},
-              {url: require('../../../static/img/class02.jpg'), title: '学什么数学', learn: '开始学习'}
+              {url: require('../../assets/img/class02.jpg'), title: '学什么数学', learn: '开始学习'},
+              {url: require('../../assets/img/class02.jpg'), title: '学什么数学', learn: '开始学习'}
             ]
           }, 500)
         }

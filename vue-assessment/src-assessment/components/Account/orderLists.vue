@@ -127,20 +127,9 @@
           })
         },
         get () {
-          let sendData = new URLSearchParams(this.sendMsg)
-          this.$http({
-            method: 'POST',
-            url: 'http://134.175.237.162/index.php/info/addOrder',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            data: sendData
-          }).then(res => {
-            console.log(res)
-            this.$http.post('http://134.175.237.162/index.php/info/getOrder', new URLSearchParams(this.getLists))
-              .then(function (res) {
-                console.log(res)
-              })
+          this.$http.post('http://134.175.237.162/index.php/info/addOrder', JSON.stringify(this.sendMsg))
+            .then(res => {
+            // console.log(res)
           }).catch(function (error) {
               console.log(error)
           })

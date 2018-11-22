@@ -13,6 +13,7 @@ const portfinder = require('portfinder')
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+/*
 const express = require('express')                         //1.
 const app = express()                                     //2.请求sever
 var appData = require('../static/json/homepage.json') //3.加载本地数据文件
@@ -20,6 +21,7 @@ var homepage = appData.homepage
 var study = appData.study
 var apiRoutes = express.Router()                          //4.
 app.use('/api',apiRoutes)                                  //5.通过路由请求数据
+*/
 
 
 const devWebpackConfig = merge(baseWebpackConfig, {
@@ -51,8 +53,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll,
-    },
-    before(app) {
+    }
+    /* before(app) {
       app.get('/api/homepage', (req, res) => {
         res.json({
           errno: 0,
@@ -71,7 +73,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           data: teacher
         })
       })
-    }
+    } */
   },
   plugins: [
     new webpack.DefinePlugin({
