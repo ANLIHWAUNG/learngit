@@ -14,22 +14,20 @@
       name: 'catalog',
       data: function () {
         return {
-          catalog: []
+          catalog: ''
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              let homepage = res.data.data
-              this.catalog = homepage[0].catalog
-              console.log(this.catalog)
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
+          setTimeout(() => {
+            this.catalog = [
+              {hint: '1. 这是一门视频连载课程！更新频率和学习服务看这里哦~', watch: '可试看'},
+              {hint: '2. 课程导读：维小维老师介绍以及这门课程中你将会拥有的收获', watch: '可试看'}
+            ]
+          }, 300)
         }
       }
     }

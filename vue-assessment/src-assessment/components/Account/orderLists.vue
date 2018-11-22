@@ -48,13 +48,13 @@
         </div>
       </div>
       <!-- 实付 -->
-      <p class="real-pay">实付：<span class="re">{{ content.price}}</span></p>
+      <p class="real-pay">实付：<span class="re">￥{{ content.price}}</span></p>
       <!-- 立即支付 -->
       <div class="payment">
         <p class="gray">实际总付：￥268</p>
         <div class="payment-content">
           <p>待支付</p>
-          <p><Button class="gray">取消订单</Button><Button class="re" to="/payment">立即支付</Button></p>
+          <p><Button class="gray">取消订单</Button><Button class="re" :to="{name:'payment', params: {'price': this.content.price}}">立即支付</Button></p>
         </div>
       </div>
     </div>
@@ -82,33 +82,51 @@
       name: 'order-lists',
       data: function () {
         return {
-          content: {}
+          userData: '',
+          content: '',
+          sendMsg: {
+            courseid: '7,8,9',
+            userid: 1
+          },
+          getLists: {
+            userid: 1,
+            pagenow: 1,
+            pagesize: 1
+          }
         }
       },
       mounted () {
+        this.userData = JSON.parse(sessionStorage.getItem('userData'))
+        this.getOrder()
         this.get()
         let a = document.querySelectorAll('nav a')
         let content = document.querySelectorAll('.content')
         let l = a.length
-        for(let i = 0; i < l; i++){
+        for (let i = 0; i < l; i++) {
           a[i].onclick = function () {
              for (let j = 0; j < l; j++) {
-               a[j].setAttribute('class','')
-               content[j].setAttribute('style','display:none')
+               a[j].setAttribute('class', '')
+               content[j].setAttribute('style', 'display:none')
              }
-             a[i].setAttribute('class','active')
-             content[i].setAttribute('style','display:block')
+             setTimeout(() => {
+               a[i].setAttribute('class', 'active')
+               content[i].setAttribute('style', 'display:block')
+             }, 500)
           }
         }
       },
       methods: {
-        get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              let homepage = res.data.data
-              this.content = homepage[0].goodLeason[0]
-            }).catch(function(error){
-            console.log("error init."+error)
+        getOrder: function () {
+          setTimeout(() => {
+            this.content = {url: require('../../assets/img/class-01.jpg'), className: '能帮你赚到钱的50节商业思维提升课', price: '69'}
+          }, 500)
+        },
+        get () {
+          this.$http.post('http://134.175.237.162/index.php/info/addOrder', JSON.stringify(this.sendMsg))
+            .then(res => {
+            // console.log(res)
+          }).catch(function (error) {
+              console.log(error)
           })
         }
       }

@@ -30,14 +30,14 @@
           <Row type="flex" justify="space-between" v-for="(item, index) in goodLeason" :key="index">
             <i-col span="12">
               <router-link to="/classDetail">
-                <img :src="item.url"/>
+                <img :src="item.imgUrl"/>
                 <p>{{item.className}}</p>
                 <p>{{item.price}}</p>
               </router-link>
             </i-col >
             <i-col  span="12">
               <router-link to="/classDetail">
-                <img :src= 'item.url'/>
+                <img :src= 'item.imgUrl'/>
                 <p>{{item.className}}</p>
                 <p>{{item.price}}</p>
               </router-link>
@@ -48,25 +48,25 @@
         <div>
           <p class="title">专题</p>
           <div class="img-box">
-            <img v-for="(item, index) in special" :key="index" :src="item.url"/>
+            <img v-for="(item, index) in special" :key="index" :src="item.imgUrl"/>
           </div>
         </div>
         <!-- 办公效率 -->
         <p class="title">办公效率</p>
         <div class="img-box">
-          <img :src="efficiency.url"/>
+          <img :src="efficiency.imgUrl"/>
           <p class="gray">{{efficiency.className}}</p>
           <p>{{efficiency.price}}</p>
         </div>
         <Row type="flex" justify="space-between">
           <i-col span="12">
             <a>
-              <img :src="imgUrl"/>
+              <img :src="pic.imgUrl"/>
             </a>
           </i-col >
           <i-col  span="12">
             <a>
-              <img :src="imgUrl"/>
+              <img :src="pic.imgUrl"/>
             </a>
           </i-col >
         </Row>
@@ -90,28 +90,30 @@
           setting: {
             dots: 'none'
           },
-          goodLeason: [],
-          imgUrl: '',
-          special: [],
-          efficiency: {}
+          goodLeason: '',
+          special: '',
+          efficiency: '',
+          pic: ''
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              // console.log(res.data.data)
-              let homepage = res.data.data
-              this.goodLeason = homepage[0].goodLeason
-              this.special = homepage[0].special
-              this.efficiency = homepage[0].efficiency[0]
-              this.imgUrl = this.goodLeason[0].url
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
+          setTimeout(() => {
+            this.goodLeason = [
+              {imgUrl: require('../../assets/img/class-01.jpg'), className: '能帮你赚到钱的50节商业思维提升课', price: '￥69'},
+              {imgUrl: require('../../assets/img/class-01.jpg'), className: '能帮你赚到钱的50节商业思维提升课', price: ''},
+              {imgUrl: require('../../assets/img/class-01.jpg'), className: '能帮你赚到钱的50节商业思维提升课', price: ''}
+            ]
+              this.special = [
+                {imgUrl: require('../../assets/img/class-02.png')},
+                {imgUrl: require('../../assets/img/class-03.png')}
+              ]
+              this.efficiency = [{imgUrl: require('../../assets/img/class-02.png'), className: '向《经济人学》学图标', price: '￥199'}]
+              this.pic = {imgUrl: require('../../assets/img/class-01.jpg')}
+          }, 300)
         }
       }
     }

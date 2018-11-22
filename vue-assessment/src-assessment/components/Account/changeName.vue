@@ -3,8 +3,8 @@
     <keep-alive>
       <div class="title">
         <div class="userName">
-          <Icon type="ios-contact" />
-          <p>{{account}}</p>
+          <img :src="userData.img_url"/>
+          <p>{{username}}</p>
         </div>
         <span @click="modal2 = true" class="edit">编辑</span>
       </div>
@@ -14,7 +14,7 @@
         <span>修改昵称</span>
       </p>
       <div style="text-align:center;">
-        <input v-model="accountCopy">
+        <input v-model="userName">
       </div>
       <div slot="footer" style="display:flex;text-align:center;width:100%;" class="modalFooter">
         <span @click="off">取消</span><span @click="confirm">确定</span>
@@ -42,10 +42,11 @@
       data: function () {
         return {
           modal2: false,
-          account: '',
-          accountCopy: '',
+          userData: '',
+          username: '',
+          userName: '',
           modal1: false,
-          loading: true,
+          loading: true
         }
       },
       mounted () {
@@ -54,22 +55,22 @@
       methods: {
         confirm () {
           this.modal2 = false
-          this.account = this.accountCopy
-          this.$Message.info('修改成功')
+          this.username = this.userName
+            this.$Message.info('修改成功')
         },
         off () {
           this.modal2 = false
-          this.accountCopy = this.account
         },
         get: function () {
-          this.account = this.$route.params.account
-          this.accountCopy = this.account
+          this.userData = this.$route.params.userData
+          this.username = this.userData.username
+          this.userName = this.userData.username
         },
         ok () {
           setTimeout(() => {
-            this.modal1 = false;
+            this.modal1 = false
             this.$Message.info('退出成功')
-            window.location.href="index.html"
+            window.location.href = 'index.html'
           }, 2000)
         },
         cancel () {
@@ -93,8 +94,11 @@
     justify-content: space-between;
     align-items: center;
   }
-  .ivu-icon{
-    font-size: 3.5rem;
+  .userName img{
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 50%;
+    margin-right: .5rem;
   }
   .title p,
   .title span{

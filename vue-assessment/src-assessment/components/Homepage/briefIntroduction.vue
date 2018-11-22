@@ -39,7 +39,7 @@
       </div>
       <!-- 图片 -->
       <div class="img-box">
-        <img :src="item.url" v-for="(item, index) in   abstract" :key="index"/>
+        <img :src="item.imgUrl" v-for="(item, index) in   abstract" :key="index"/>
         <div class="hint">
           <p class="title">适用人群</p>
           <span class="gray">
@@ -54,7 +54,7 @@
         <div class="lecturer">
           <p class="title">讲师</p>
           <div class="lecturer-msg">
-            <img :src="lecturer.url"/>
+            <img :src="lecturer.imgUrl"/>
             <span>{{lecturer.name}}</span>
           </div>
           <p class="gray">{{lecturer.description}}</p>
@@ -69,23 +69,26 @@
       name: 'brief-introduction',
       data: function () {
         return {
-          abstract: [],
-          lecturer: {}
+          abstract: '',
+          lecturer: ''
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/homepage")
-            .then(res=>{
-              let homepage = res.data.data
-              this.abstract = homepage[0].abstract
-              this.lecturer = homepage[0].lecturer[0]
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
+          setTimeout(() => {
+            this.abstract = [
+              {imgUrl: require('../../assets/img/detail01.jpg')},
+              {imgUrl: require('../../assets/img/detail02.jpg')},
+              {imgUrl: require('../../assets/img/detail03.jpg')},
+              {imgUrl: require('../../assets/img/detail04.jpg')}
+            ]
+            this.lecturer = [
+              {imgUrl: require('../../assets/img/teacher01.jpg'), name: '维小维生素w', description: '大家好，我是维小维。实战派财商教练，开设的小白理财课程和财商加薪课，持续热销，以认真的同理心，改变数万人。'}
+            ]
+          }, 300)
         }
       }
     }

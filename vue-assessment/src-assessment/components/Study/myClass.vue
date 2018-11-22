@@ -17,21 +17,20 @@
         name: 'my-class',
       data: function () {
         return {
-          course: []
+          course: ''
         }
       },
-      mounted: function (){
+      mounted: function () {
         this.get()
       },
       methods: {
         get: function () {
-          this.$http.get("/api/study")
-            .then(res=>{
-              let study = res.data.data
-              this.course = study[0].course
-            }).catch(function(error){
-            console.log("error init."+error)
-          })
+          setTimeout(() => {
+            this.course = [
+              {url: require('../../assets/img/class02.jpg'), title: '学什么数学', learn: '开始学习'},
+              {url: require('../../assets/img/class02.jpg'), title: '学什么数学', learn: '开始学习'}
+            ]
+          }, 500)
         }
       }
     }
