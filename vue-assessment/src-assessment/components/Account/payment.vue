@@ -2,7 +2,7 @@
   <section>
     <p class="title">支付方式</p>
     <!-- 支付方式 -->
-    <RadioGroup vertical v-model="ways">
+    <RadioGroup vertical v-model="ways" id="ways">
       <Radio label="微信">
         <p><img src="../../assets/img/ways03.png"/>微信支付</p>
       </Radio>
@@ -60,7 +60,7 @@
     background-color: #fff;
     width: 100%;
   }
-  .ivu-radio-group-item{
+  #ways .ivu-radio-group-item{
     display: flex;
     align-items: center;
     padding: 1.7rem;
@@ -105,9 +105,6 @@
   .protocol span{
     color: green;
   }
-
-
-
   .radio{
     display: none;
   }
