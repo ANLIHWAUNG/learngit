@@ -31,7 +31,7 @@
     <!-- 提交订单 -->
     <div class="sub-order">
       <p class="order-money">实付金额：<span>￥{{sum}}</span></p>
-      <Button :to="{name:'payment', params: {'price': this.price}}">提交订单</Button>
+      <Button :to="{name:'payment', params: {'price': sum}}">提交订单</Button>
     </div>
   </section>
 </template>

@@ -104,7 +104,7 @@
             this.sum += +this.order[i].price
           }
           this.butDisabled = false
-          // console.log(this.butDisabled)
+          this.sendOrder = this.order
         } else {
           this.checkAllGroup = []
           this.sum = 0.00
