@@ -93,24 +93,24 @@
   .book-name .gray{
     line-height: 1;
     color: #8891A7;
-    border: 1px solid #8891A7;
-    border-radius: 2px;
+    border: 074rem solid #8891A7;
+    border-radius: .147rem;
     margin-right: 0.5rem;
   }
   .price{
-    border-top: 1px solid #e6eaf2;
+    border-top: 074rem solid #e6eaf2;
     display: flex;
     width: 100%;
     align-items: center;
     margin-top: 0.367rem;
   }
   .price span:last-child{
-    border: 1px solid #ff632a;
+    border: .074rem solid #ff632a;
     color: #ff632a;
-    margin-right: 4px;
-    padding: 3px;
-    margin-left: 15px;
-    font-size: 12px;
+    margin-right: .29rem;
+    padding: .22rem;
+    margin-left: 1.1rem;
+    font-size: .88rem;
   }
   /* 教师 */
   .teacher-part{
@@ -146,7 +146,7 @@
   .hint{
     margin-top:1.53rem;
     padding-bottom: 1.15rem;
-    border-bottom: 1px solid #e6eae5;
+    border-bottom: 074rem solid #e6eae5;
   }
   .title{
     font-size: 1rem;

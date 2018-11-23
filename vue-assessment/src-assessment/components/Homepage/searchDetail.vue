@@ -136,12 +136,12 @@
     display: block;
     padding: .6rem;
     color: #3c4a55;
-    border-bottom: 3px solid transparent;
+    border-bottom: .22rem solid transparent;
     background-color: #fff;
   }
   nav .ivu-row .active{
     color: #2cc17b;
-    border-bottom: 3px solid #2cc17b;
+    border-bottom: .22rem solid #2cc17b;
   }
   /* 内容部分 */
   .content-box{

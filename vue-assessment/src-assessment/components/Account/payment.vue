@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     padding: 1.7rem;
-    border-bottom: 1px solid #F2F4F7;
+    border-bottom: .07rem solid #F2F4F7;
   }
   .ivu-radio-group-item img{
     width: 2.8rem;
@@ -74,7 +74,7 @@
     padding-right: .6rem;
   }
   .recommend{
-    border: 1px solid #FF4400;
+    border: .07rem solid #FF4400;
     color: #FF4400;
     font-size: .9rem;
     border-radius: .23rem;
@@ -111,21 +111,21 @@
   .radio+label {
     background-color: white;
     border-radius: 50%;
-    border: 1px solid #d3d3d3;
-    width: 15px;
-    height: 15px;
+    border: .07rem solid #d3d3d3;
+    width: 1.1rem;
+    height: 1.1rem;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    line-height: 15px;
+    line-height: 1.1rem;
   }
   .radio:checked+label {
     background: rgb(44,193,123);
-    border: 1px solid greenyellow;
+    border: .07rem solid greenyellow;
   }
   .radio:checked+label:after {
     content: "\2714";
-    font-size: 20px;
+    font-size: 1.47rem;
     color: white;
   }
   .m-payArea-wrap{
@@ -155,7 +155,7 @@
   .treatyFb{
     padding: .5rem .5rem;
     background-color: rgb(255,255,204);
-    box-shadow:5px 5px 3px yellow;
+    box-shadow: .36rem .36rem .22rem yellow;
     position: absolute;
     left: 50%;
     top:3rem;

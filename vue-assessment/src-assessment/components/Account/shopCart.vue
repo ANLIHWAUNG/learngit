@@ -176,7 +176,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: .5rem;
-    border-bottom: 1px solid rgba(173, 178, 190, 0.36);
+    border-bottom: .07rem solid rgba(173, 178, 190, 0.36);
   }
   .course-content{
     display: flex;
@@ -189,8 +189,8 @@
     align-items: center;
   }
   .course-main img{
-    width: 97px;
-    height: 54px;
+    width: 7.13rem;
+    height: 3.97rem;
     margin-right: 1rem;
   }
   .course-main a{
@@ -200,7 +200,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 150px;
+    width: 11rem;
   }
   .course-main .time,
   .del{
@@ -233,7 +233,7 @@
     display: flex;
     width: 100%;
     position: relative;
-    border: 1px solid #F3F5F7;
+    border: .07rem solid #F3F5F7;
   }
   .navigation-item .left,
   .navigation-list{

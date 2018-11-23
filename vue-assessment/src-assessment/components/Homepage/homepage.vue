@@ -157,8 +157,8 @@
     line-height: .83333rem;
     text-align: center;
     border-radius: .53333rem;
-    font-size: 12px;
-    border: 1px solid #2cc17b;
+    font-size: .88rem;
+    border: 074rem solid #2cc17b;
     vertical-align: bottom;
   }
   .header-r i{

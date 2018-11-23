@@ -70,21 +70,21 @@
     display: block;
     padding: .6rem;
     color: #3c4a55;
-    border-bottom: 3px solid transparent;
+    border-bottom: .22rem solid transparent;
     background-color: #fff;
   }
   .ivu-row .router-link-active{
     color: #2cc17b;
-    border-bottom: 3px solid #2cc17b;
+    border-bottom: .22rem solid #2cc17b;
   }
   .video-part{
-    height: 188.8px;
+    height: 13.88rem;
     width: 100%;
     overflow: hidden;
   }
   .video-js .vjs-big-play-button{
-    width: 86px;
-    height: 41px;
+    width: 6.32rem;
+    height: 3rem;
     border-radius: .5rem;
   }
 </style>

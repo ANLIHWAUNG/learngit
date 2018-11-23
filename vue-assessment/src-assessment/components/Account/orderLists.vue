@@ -146,12 +146,12 @@
     display: block;
     padding: .6rem;
     color: #3c4a55;
-    border-bottom: 3px solid transparent;
+    border-bottom: .22rem solid transparent;
     background-color: #fff;
   }
   nav .ivu-row .active{
     color: #2cc17b;
-    border-bottom: 3px solid #2cc17b;
+    border-bottom: .22rem solid #2cc17b;
   }
   /* 订单号 */
   .order-num p{
@@ -197,7 +197,7 @@
   /* 立即支付 */
   .payment{
     background-color: #fff;
-    border-top: 1px solid #ddd;
+    border-top: .07rem solid #ddd;
     padding: 1.5rem 1rem 1rem 1rem;
   }
   .payment p.gray{
@@ -219,11 +219,11 @@
   }
   .payment-content .gray{
     padding: .3rem 1.2rem;
-    border: 1px solid #b5b5b5;
+    border: .07rem solid #b5b5b5;
     margin-right: 1rem;
   }
   .payment-content .re{
     padding: .3rem 1.2rem;
-    border: 1px solid red;
+    border: .07rem solid red;
   }
 </style>

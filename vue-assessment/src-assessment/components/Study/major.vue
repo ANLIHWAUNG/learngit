@@ -61,9 +61,9 @@
     width: 5.33rem;
     color: #2cc17b;
     text-decoration: none;
-    font-size: 1.07px;
+    font-size: .078rem;
     display: inline-block;
-    border: 1px solid #2cc17b;
+    border: .07rem solid #2cc17b;
     border-radius: 3rem;
     text-align: center;
     line-height: 1.35rem;

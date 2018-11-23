@@ -87,7 +87,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: .07rem solid #ddd;
   }
   .userName{
     display: flex;
@@ -128,6 +128,6 @@
   }
   .ivu-btn{
     color: red;
-    border: 1px solid red;
+    border: .07rem solid red;
   }
 </style>

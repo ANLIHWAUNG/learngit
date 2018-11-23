@@ -149,7 +149,7 @@
     width: 95%;
     padding-bottom: .3rem;
     padding-right: .3rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: .07rem solid #ddd;
     font-size: 1.15rem;
     color: #2c3e50;
   }
@@ -176,7 +176,7 @@
   }
   .footerItem span{
     width: 50%;
-    border: 1px solid #ddd;
+    border: .07rem solid #ddd;
     color: blue;
     font-weight: bold;
     height: 3rem;

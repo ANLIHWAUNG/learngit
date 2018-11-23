@@ -92,7 +92,7 @@
     color: #000;
     font-size: 1rem;
     padding-top: .8rem;
-    border-top: 1px solid #ccc;
+    border-top: .07rem solid #ccc;
   }
   /* 订单 */
   .order{
@@ -103,8 +103,8 @@
     display: flex;
   }
   .order-main img{
-    width: 120px;
-    height: 75px;
+    width: 8.82rem;
+    height: 5.51rem;
   }
   .order-content{
     margin-left: .5rem;
@@ -117,26 +117,26 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 14.7rem;
   }
   /* 小计 */
   .money{
     text-align: right;
     color: #666;
-    margin-top: 10px;
+    margin-top: .74rem;
   }
   .money p:first-child{
-    height: 40px;
-    line-height: 40px;
+    height: 2.94rem;
+    line-height: 2.94rem;
     background-color: #fff;
-    padding-right: 10px;
+    padding-right: .73rem;
   }
   .money p:last-child{
     background: #f7f9fc;
     padding: .8rem 0;
     line-height: 3rem;
     font-size: 1rem;
-    padding-right: 10px;
+    padding-right: .73rem;
   }
   /* 总计 */
   .sum-money{
@@ -149,7 +149,7 @@
     padding: 0 .8rem;
     color: #3c4a55;
     font-size: 1rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: .07rem solid #ddd;
   }
   .sum-money p:first-child{
     text-align: right;
@@ -181,9 +181,9 @@
     color: #ff4400;
   }
   .ivu-btn{
-    width: 164px;
+    width: 12rem;
     height: 3rem;
-    border-radius: 20px;
+    border-radius: 1.47rem;
     line-height: 3rem;
     text-align: center;
     color: #fff;
