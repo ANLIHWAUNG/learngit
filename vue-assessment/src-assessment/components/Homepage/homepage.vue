@@ -158,7 +158,7 @@
     text-align: center;
     border-radius: .53333rem;
     font-size: .88rem;
-    border: 074rem solid #2cc17b;
+    border: .07rem solid #2cc17b;
     vertical-align: bottom;
   }
   .header-r i{
