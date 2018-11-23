@@ -54,8 +54,8 @@
     methods: {
       get: function () {
         setTimeout(() => {
-          this.sum = this.$route.params.sum
-          this.order = this.$route.params.order
+          this.order = JSON.parse(sessionStorage.getItem('order'))
+          this.sum = JSON.parse(sessionStorage.getItem('sum'))
           this.price = this.order[0].price
         }, 300)
       }

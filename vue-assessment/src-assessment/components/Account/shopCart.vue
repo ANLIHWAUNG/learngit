@@ -52,7 +52,7 @@
             <p>合计：<span>￥{{sum}}</span></p>
             <p>若有优惠，将在订单结算页面减扣</p>
           </div>
-          <Button :disabled="butDisabled" type="primary" :to="{name: 'settlement', params: {'id': 1, 'order':  sendOrder, 'sum': sum}}">去结算</Button>
+          <Button :disabled="butDisabled" @click="sendMsg" type="primary" :to="{name: 'settlement', params: {'id': 1}}">去结算</Button>
         </div>
       </Checkbox>
     </div>
@@ -138,6 +138,10 @@
           }).catch(function (error) {
           console.log(error)
         })
+      },
+      sendMsg () {
+        sessionStorage.setItem('order', JSON.stringify(this.sendOrder))
+        sessionStorage.setItem('sum', JSON.stringify(this.sum))
       }
     }
   }

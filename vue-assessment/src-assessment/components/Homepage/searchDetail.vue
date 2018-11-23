@@ -165,8 +165,8 @@
     display: flex;
   }
   .content img{
-    width: 188px;
-    height: 110px;
+    width: 13.83rem;
+    height: 8.1rem;
   }
   .course{
     margin-left: .5rem;
